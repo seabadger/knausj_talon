@@ -29,7 +29,7 @@ main_screen = ui.main_screen()
 def update_homophones(name, flags):
     if name != homophones_file:
         return
-
+    print("homophones updating")
     phones = {}
     canonical_list = []
     with open(homophones_file, "r") as f:

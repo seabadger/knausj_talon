@@ -19,6 +19,7 @@ Wayne,wane,wain
 acclamation,acclimation
 add,ad
 addition,edition
+added,edit
 adds,ads,adz
 adherence,adherents
 ado,adieu
@@ -74,7 +75,7 @@ beer,bier
 bell,belle
 better,bettor
 bib,bibb
-bite,byte,bight
+byte,bite,bight
 bird,burred
 birth,berth
 blue,blew
@@ -109,6 +110,7 @@ bury,berry
 bust,bussed
 but,butt
 by,buy,bye
+bytes,bites
 caddy,caddie
 calendar,calender
 callous,callus
@@ -165,7 +167,7 @@ coupe,coop
 coarser,courser
 cousin,cozen
 coward,cowered
-craft,kraft
+craft,kraft,cruft
 creek,creak
 crepe,crape
 cruel,crewel
@@ -545,6 +547,7 @@ suit,soot
 some,sum
 summary,summery
 Sunday,sundae
+super,supper
 surf,serf
 surge,serge
 sweet,suite
@@ -625,7 +628,7 @@ we'll,wheel
 which,witch
 while,wile
 were,whir
-word,whirred
+word,whirred,ward
 hoop,whoop
 whose,who's
 wine,whine

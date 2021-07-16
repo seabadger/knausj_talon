@@ -158,9 +158,14 @@ symbol_key_words = {
     "quote": "'",
     "L square": "[",
     "left square": "[",
+    "bracket": "[",
+    "left bracket": "[",
+    "open bracket": "[",
     "square": "[",
     "R square": "]",
     "right square": "]",
+    "right bracket": "]",
+    "close bracket": "]",
     "slash": "/",
     "backslash": "\\",
     "minus": "-",
@@ -248,4 +253,3 @@ class Actions:
     def get_alphabet() -> dict:
         """Provides the alphabet dictionary"""
         return alphabet
-

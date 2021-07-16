@@ -34,6 +34,7 @@ extension_lang_map = {
     ".c": "c",
     ".cmake": "cmake",
     ".cpp": "cplusplus",
+    ".cc": "cplusplus",
     ".cs": "csharp",
     ".gdb": "gdb",
     ".go": "go",
@@ -84,11 +85,12 @@ def code_libraries(m) -> str:
 class code_actions:
     def language():
         result = ""
+        # if not forced_language:
         file_extension = actions.win.file_ext()
         if file_extension and file_extension in extension_lang_map:
             result = extension_lang_map[file_extension]
 
-        # print("code.language: " + result)
+            #print("code.language: " + result)
         return result
 
 
@@ -109,14 +111,15 @@ class Actions:
         actions.user.code_clear_language_mode()
         actions.mode.disable("user.auto_lang")
         actions.mode.enable("user.{}".format(language))
-        # app.notify("Enabled {} mode".format(language))
+        app.notify("Enabled {} mode".format(language))
+        # forced_language = True
 
     def code_clear_language_mode():
         """Clears the active language mode, and re-enables code.language: extension matching"""
         actions.mode.enable("user.auto_lang")
         for __, lang in extension_lang_map.items():
             actions.mode.disable("user.{}".format(lang))
-        # app.notify("Cleared language modes")
+        app.notify("Cleared language modes")
 
     def code_operator_indirection():
         """code_operator_indirection"""
