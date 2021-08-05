@@ -4,4 +4,4 @@
 # (volume|media) mute: key(mute)
 # [media] play next: key(next)
 # [media] play previous: key(prev)
-# media (play | pause): key(play)
+# media (play | pause): user.play_pause()
