@@ -27,6 +27,7 @@ stat
 stats
 schwab
 MITFCU
+POSIX
 ALSI
 NOCC
 BOCC
@@ -61,15 +62,19 @@ Yakov
 Sofiya
 Vadim
 Grinshpun
+CPU
+RSS
+VSIZE
 CR
 JIRA
+CSI
 inter-release, inter release
 phase 0,phase zero
 post-world, post world
 avro
 protobuf
 StreamBundle
-queue
+enqueue,and cue
 diskmap
 diskmaps
 ghostcache
