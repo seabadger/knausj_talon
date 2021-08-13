@@ -70,6 +70,7 @@ abbreviations = {
     "dictionary": "dict",
     "direction": "dir",
     "directory": "dir",
+    "directories": "dirs",
     "distribution": "dist",
     "document": "doc",
     "documents": "docs",
