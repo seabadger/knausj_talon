@@ -21,6 +21,8 @@ OpenSSL,opennesses ell
 mutex,
 cipher
 ciphers
+IP
+IPs
 hostname
 hostnames
 stat
@@ -36,7 +38,6 @@ BOSS
 LLDC
 freeflow
 essl
-ODLB
 DDC
 DDC-base,DDC base
 DDC-akamill
@@ -68,8 +69,13 @@ CPU
 RSS
 VSIZE
 CR
+CRs
+changelist
+changelists
 JIRA
 CSI
+GTM
+ODLB
 inter-release, inter release
 phase 0,phase zero
 post-world, post world
