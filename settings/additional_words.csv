@@ -17,10 +17,13 @@ junk
 ssh,SSH
 sherpa
 queue,kew
+queues,kews
 OpenSSL,opennesses ell
 mutex,
 cipher
 ciphers
+HTTP
+HTTPS
 IP
 IPs
 hostname
