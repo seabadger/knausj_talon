@@ -86,11 +86,3 @@ class app_actions:
         
 
 
-<<<<<<< HEAD:apps/platforms/mac/terminal/terminal.py
-    def terminal_kill_all():
-        actions.key("ctrl-c")
-        actions.insert("y")
-        actions.key("enter")
-=======
-
->>>>>>> master:apps/platforms/mac/terminal/apple_terminal.py
