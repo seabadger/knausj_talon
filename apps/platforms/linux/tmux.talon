@@ -1,4 +1,4 @@
-os: linux
+#os: linux
 tag: user.tmux
 -
 mux: "tmux "
@@ -43,7 +43,7 @@ mux split vertical:
 mux next pane:
     key(ctrl-b)
     key(o)
-mux move <user.arrow_key>:
+mux (go|move|focus) <user.arrow_key>:
     key(ctrl-b)
     key(arrow_key)
 mux close pane:
@@ -53,3 +53,6 @@ mux close pane:
 mux pane numbers:
     key(ctrl-b)
     key(q)
+mux swap pane:
+    key(ctrl-b)
+    key(ctrl-o)

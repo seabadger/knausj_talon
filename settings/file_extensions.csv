@@ -37,3 +37,13 @@ File extension,Name
 .avro,dot avro
 .proto,dot proto
 .xml,dot xml
+.yaml,dot yaml
+.tar,dot tar
+.gz,dot gz
+.bz2,dot bz two
+.zstd,dot zstd
+.zstd,dot zstandard
+.tar.gz,dot tar gz
+.tar.bz2,dot tar bz two
+.tar.zstd,dot tar zstd
+.tar.zstd,dot tar zstandard

@@ -18,6 +18,7 @@ ssh,SSH
 sherpa
 queue,kew
 queues,kews
+queued,cued
 OpenSSL,opennesses ell
 mutex,
 cipher
@@ -35,10 +36,20 @@ schwab
 MITFCU
 POSIX
 ALSI
+ALSI9,ALSI nine
+ALSI10,ALSI ten
+ALSI11,ALSI eleven
+alsi9-lib64,ALSI nine lib sixty four
+alsi10-lib64,ALSI ten lip sixty four
+alsi11-lib64,ALSI eleven lib sixty
+alsi9-lib32,ALSI nine lib thirty two
+alsi10-lib32,ALSI ten lip thirty two
+alsi11-lib32,ALSI eleven lib thirty two
 NOCC
 BOCC
 BOSS
 LLDC
+LLDQ
 freeflow
 essl
 DDC
@@ -89,3 +100,6 @@ enqueue,and cue
 diskmap
 diskmaps
 ghostcache
+asan
+tsan
+tmpfs, temp of es
