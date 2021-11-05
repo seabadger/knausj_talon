@@ -174,6 +174,7 @@ symbol_key_words = {
     "backslash": "\\",
     "minus": "-",
     "dash": "-",
+    "hyphen": "-",
     "equals": "=",
     "plus": "+",
     "tilde": "~",

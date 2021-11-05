@@ -27,6 +27,7 @@ HTTP
 HTTPS
 IP
 IPs
+TCP
 hostname
 hostnames
 stat
