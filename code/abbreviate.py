@@ -11,6 +11,7 @@ abbreviations = {
     "administrators": "admins",
     "advance": "adv",
     "advanced": "adv",
+    "aggregation": "aggr",
     "alberta": "ab",
     "alternative": "alt",
     "application": "app",

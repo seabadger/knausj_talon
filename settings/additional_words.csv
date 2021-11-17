@@ -73,6 +73,8 @@ hostsetup
 psplit
 qsplit
 smoosh
+workspace
+NOCC
 KMI
 MDT
 UMP
@@ -104,3 +106,6 @@ ghostcache
 asan
 tsan
 tmpfs, temp of es
+codebase
+codeline
+repo
