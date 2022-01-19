@@ -46,12 +46,17 @@ def word(m) -> str:
     except AttributeError:
         return " ".join(actions.user.replace_phrases(actions.dictate.parse_words(m.word)))
 
-@mod.capture(rule="({user.vocabulary} | <phrase>)+")
+# <user.spell> |
+text_rule = "({user.vocabulary} | <user.abbreviation> | <user.number_prefix> | <user.percent_suffix> | {user.key_punctuation} | <phrase>)+"
+
+# @mod.capture(rule="({user.vocabulary} | <phrase>)+")
+@mod.capture(rule=text_rule)
 def text(m) -> str:
     """A sequence of words, including user-defined vocabulary."""
     return format_phrase(m)
 
-@mod.capture(rule="({user.vocabulary} | {user.punctuation} | {user.prose_snippets} | <phrase> | <user.prose_modifier>)+")
+# @mod.capture(rule="({user.vocabulary} | {user.punctuation} | {user.prose_snippets} | <phrase> | <user.prose_modifier>)+")
+@mod.capture(rule="({user.vocabulary} | {user.punctuation} | {user.prose_snippets} |  <user.number_prefix> | <user.percent_suffix> | <user.abbreviation> | <phrase> | <user.prose_modifier>)+")
 def prose(m) -> str:
     """Mixed words and punctuation, auto-spaced & capitalized."""
     # Straighten curly quotes that were introduced to obtain proper spacing.
