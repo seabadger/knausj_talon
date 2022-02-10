@@ -6,6 +6,8 @@ mux: "tmux "
 #session management
 mux new session:
     insert('tmux new ')
+mux attach:
+    insert('tmux attach ')
 mux sessions:
     key(ctrl-b)
     key(s)
@@ -56,3 +58,9 @@ mux pane numbers:
 mux swap pane:
     key(ctrl-b)
     key(ctrl-o)
+mux zoom:
+    key(ctrl-b)
+    key(z)
+mux detach:
+    key(ctrl-b)
+    key(d)

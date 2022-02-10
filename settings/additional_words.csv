@@ -120,4 +120,9 @@ pipeline
 git.source,git source
 postgres
 postgresql
+procmail
 ulfe
+edgemon
+config
+filesystem
+XML,eximel

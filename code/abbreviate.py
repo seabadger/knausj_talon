@@ -30,6 +30,7 @@ abbreviations = {
     "backup": "bak",
     "binary": "bin",
     "boolean": "bool",
+    "breeze": "bz",
     "british columbia": "bc",
     "button": "btn",
     "buffer": "buf",
@@ -100,10 +101,11 @@ abbreviations = {
     "funny": "lol",
     "generic": "gen",
     "generate": "gen",
+    "group": "grp",
     "hypertext": "http",
     "history": "hist",
     "if I recall correctly": "IIRC",
-    "if I understand correctly" : "IIUC",
+    "if I understand correctly": "IIUC",
     "image": "img",
     "import table": "iat",
     "import address table": "iat",
@@ -129,8 +131,9 @@ abbreviations = {
     "kilometer": "km",
     "language": "lng",
     "length": "len",
+    "level": "lvl",
     "library": "lib",
-    "manager":  "mgr",
+    "manager": "mgr",
     "manitoba": "mb",
     "markdown": "md",
     "maximum": "max",
@@ -191,6 +194,8 @@ abbreviations = {
     "revision": "rev",
     "ruby": "rb",
     "saskatchewan": "sk",
+    "schedule": "sched",
+    "sea plus plus": "c++",
     "sequence": "seq",
     "service pack": "sp",
     "session id": "sid",
@@ -206,7 +211,7 @@ abbreviations = {
     "standard": "std",
     "string": "str",
     "structure": "struct",
-    "so that" : "s.t.",
+    "so that": "s.t.",
     "synchronize": "sync",
     "synchronous": "sync",
     "system": "sys",
@@ -234,12 +239,15 @@ abbreviations = {
     "visual": "vis",
     "visual studio": "msvc",
     "web": "www",
+    "without": "w/o",
     "what the fuck": "wtf",
     "window": "win",
+    "work in progress": "WIP",
 }
 
 ctx = Context()
 ctx.lists["user.abbreviation"] = abbreviations
+
 
 @mod.capture(rule="brief {self.abbreviation}")
 def abbreviation(m) -> str:
