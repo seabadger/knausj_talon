@@ -60,7 +60,7 @@ def word(m) -> str:
     try:
         return m.vocabulary
     except AttributeError:
-        return " ".join(actions.user.replace_phrases(actions.dictate.parse_words(m.word)))
+        return " ".join(actions.dictate.replace_words(actions.dictate.parse_words(m.word)))
 
 # <user.spell> |
 text_rule = "({user.vocabulary} | <user.abbreviation> | <user.number_prefix> | <user.percent_suffix> | {user.key_punctuation} | <phrase>)+"
@@ -99,7 +99,7 @@ def capture_to_words(m):
     words = []
     for item in m:
         words.extend(
-            actions.user.replace_phrases(actions.dictate.parse_words(item))
+            actions.dictate.replace_words(actions.dictate.parse_words(item))
             if isinstance(item, grammar.vm.Phrase)
             else [item])
     return words
@@ -113,7 +113,7 @@ def apply_formatting(m):
         if isinstance(item, Callable):
             item(formatter)
         else:
-            words = (actions.user.replace_phrases(actions.dictate.parse_words(item))
+            words = (actions.dictate.replace_words(actions.dictate.parse_words(item))
                      if isinstance(item, grammar.vm.Phrase)
                      else [item])
             for word in words:
