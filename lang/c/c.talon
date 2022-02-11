@@ -91,7 +91,7 @@ push brackets:
 
 # Ex. (int *)
 cast to <user.c_cast>: "{c_cast}"
-standard cast to <user.stdint_cast>: "{stdint_cast}"
+standard cast to <user.c_stdint_cast>: "{c_stdint_cast}"
 <user.c_types>: "{c_types}"
 <user.c_pointers>: "{c_pointers}"
 <user.c_keywords>: "{c_keywords}"
