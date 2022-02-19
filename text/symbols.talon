@@ -1,8 +1,11 @@
 question [mark]: "?"
 (downscore | underscore): "_"
 double dash: "--"
-(bracket | brack | left bracket): "{"
-(rbrack | are bracket | right bracket): "}"
+(bracket | brack | left bracket): "["
+(rbrack | are bracket | right bracket): "]"
+(brace  | left brace): "{"
+(rbrace | are brace | right brace): "}"
+
 triple quote: "'''"
 (triple grave | triple back tick | gravy):
     insert("```")

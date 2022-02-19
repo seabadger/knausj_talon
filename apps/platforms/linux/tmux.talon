@@ -14,6 +14,12 @@ mux sessions:
 mux name session:
     key(ctrl-b)
     key($)
+mux save session:
+    key(ctrl-b)
+    key(ctrl-s)
+mux restore session:
+    key(ctrl-b)
+    key(ctrl-r)
 mux kill session:
     insert('tmux kill-session -t ')
 #window management
