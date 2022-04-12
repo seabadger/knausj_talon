@@ -10,9 +10,12 @@ app: apple_terminal
 directories_to_remap = {}
 directories_to_exclude = {}
 
+
 @ctx.action_class('edit')
 class EditActions:
-    def delete_line(): actions.key('ctrl-u')
+    def delete_line():
+        actions.key('ctrl-u')
+
 
 @ctx.action_class('user')
 class UserActions:
@@ -46,11 +49,11 @@ class UserActions:
 
         #jtk - refresh title isn't necessary since the apple terminal does it for us
         #actions.user.file_manager_refresh_title()
-        
+
     def file_manager_open_parent():
         actions.insert('cd ..')
         actions.key('enter')
-        
+
     def file_manager_select_directory(path: str):
         """selects the directory"""
         actions.insert(path)
@@ -73,9 +76,10 @@ class UserActions:
     def file_manager_refresh_title():
         return
 
+
 @ctx.action_class("app")
 class app_actions:
-    # other tab functions should already be implemented in 
+    # other tab functions should already be implemented in
     # code/platforms/mac/app.py
 
     def tab_previous():
@@ -83,6 +87,3 @@ class app_actions:
 
     def tab_next():
         actions.key("ctrl-tab")
-        
-
-
