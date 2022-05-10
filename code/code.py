@@ -14,7 +14,7 @@ language_extensions = {
     # 'cmake': 'cmake',
     'cplusplus': 'cpp hpp cc h cxx',
     'csharp': 'cs',
-    # 'css': 'css',
+    'css': 'css',
     # 'elisp': 'el',
     # 'elm': 'elm',
     'gdb': 'gdb',
