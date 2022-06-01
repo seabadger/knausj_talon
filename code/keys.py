@@ -1,7 +1,4 @@
-from typing import Set
-
-from talon import Module, Context, actions, app
-import sys
+from talon import Context, Module, actions, app
 
 default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
     " ")
@@ -9,8 +6,9 @@ letters_string = "abcdefghijklmnopqrstuvwxyz"
 
 default_digits = "zero one two three four five six seven eight nine".split(" ")
 numbers = [str(i) for i in range(10)]
-default_f_digits = "one two three four five six seven eight nine ten eleven twelve".split(
-    " ")
+default_f_digits = (
+    "one two three four five six seven eight nine ten eleven twelve".split(" ")
+)
 
 mod = Module()
 mod.list("letter", desc="The spoken phonetic alphabet")
@@ -147,7 +145,6 @@ punctuation_words = {
     "at sign": "@",
     "and sign": "&",
     "ampersand": "&",
-
     # Currencies
     "dollar sign": "$",
     "pound sign": "£",
@@ -202,7 +199,6 @@ symbol_key_words = {
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
-
     # Currencies
     "dollar": "$",
     "pound": "£",
@@ -260,7 +256,7 @@ class Actions:
     def move_cursor(s: str):
         """Given a sequence of directions, eg. 'left left up', moves the cursor accordingly using edit.{left,right,up,down}."""
         for d in s.split():
-            if d in ('left', 'right', 'up', 'down'):
+            if d in ("left", "right", "up", "down"):
                 getattr(actions.edit, d)()
             else:
-                raise RuntimeError(f'invalid arrow key: {d}')
+                raise RuntimeError(f"invalid arrow key: {d}")
